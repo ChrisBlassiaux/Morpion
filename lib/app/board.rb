@@ -14,7 +14,6 @@ class Board
     @boardcase << BoardCase.new("C3", ' ')
   end
 
-
   def board_view
     puts (" " * 13) + "   1   2   3  "
     puts (" " * 12) + "  -------------"

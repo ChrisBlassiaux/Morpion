@@ -37,16 +37,6 @@ class Game
     return @@tour
   end
 
-  def game_in_progress
-    #si on arrive au 9eme sans vainqueur, partie nulle
-    #sinon envoyer le end dans game
-  end
-
-  def end
-    puts 'La partie est terminée'
-    #dire qui a gagné, ou si la partie est match nul
-  end
-
   def restart_game?
     puts "Voulez vous lancer un nouvelle partie ?"
     puts "- Oui"
