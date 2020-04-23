@@ -1,8 +1,6 @@
-
-
 class Game 
   attr_accessor :players, :board
-  @@tour = 1
+  @@tour = 0
 
   def initialize(name_1, symbole_1, name_2, symbole_2)
     @players = []
@@ -23,7 +21,7 @@ class Game
     puts "#{which_player_should_play.name}, C'est votre tour !"
     puts "Entrez les coordonnées de la case souhaitée"
     print ">> "
-    @@tour += 1
+    #ICI
     selected_case = gets.chomp
   end
 
@@ -37,6 +35,7 @@ class Game
   end
 
   def game_turn_counter
+    @@tour += 1 #probleme avec le tour, il etait où il y a le ICI et le jeu avait un vainqueur, plus mtn ET tout en haut était à 1 
     return @@tour
   end
 

@@ -20,7 +20,7 @@ name_1 = gets.chomp
 puts "Entrez le nom du joueur 2 (X)"
 print ">> "
 name_2 = gets.chomp
-puts "Bienvenu #{name_1} et #{name_2}"
+puts "Bienvenus #{name_1} et #{name_2}"
 
 puts "Etes-vous prêts pour lancer la partie ?"
 puts "- Oui"
@@ -32,15 +32,15 @@ if answer == "Oui"
   game = Game.new(name_1, "O", name_2, "X")
   board = Board.new
 
-  while game.game_turn_counter <= 9 #|| quelqu'un gagne
+  while game.game_turn_counter <= 30 #|| quelqu'un gagne
     system "clear"
-    game.start_turns 
+    game.start_turns
     board.board_view
     choice = game.recover_player_choice
     player = game.which_player_should_play
     board.change_content_of_case(choice, player)
-
-    if board.game_won_or_game_bad? 
+    
+    if board.game_won_or_game_bad?
       system "clear"
       board.board_view
       puts "La partie est terminée, #{player.name} a gagné !" #bUG DE NAME
@@ -57,7 +57,7 @@ if answer == "Oui"
   end
 
 else
-  puts "Au revoir #{@players[0].name} et #{@players[1].name}"
+  puts "Au revoir #{name_1} et #{name_2}"
 end
 
 
