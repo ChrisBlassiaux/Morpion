@@ -18,15 +18,13 @@ class Game
   end
 
   def recover_player_choice
-    puts "#{which_player_should_play.name}, C'est votre tour !"
-    puts "Entrez les coordonnées de la case souhaitée"
-    print ">> "
-    #ICI
+    puts "  #{which_player_should_play.name}, C'est votre tour !"
+    puts "  Entrez les coordonnées de la case souhaitée"
+    print "  >> "
     selected_case = gets.chomp
   end
 
   def which_player_should_play
-    #tour supll tour_suppl += 1
     if @@tour.odd?
       return @players[0]
     else
@@ -35,7 +33,7 @@ class Game
   end
 
   def game_turn_counter
-    @@tour += 1 #probleme avec le tour, il etait où il y a le ICI et le jeu avait un vainqueur, plus mtn ET tout en haut était à 1 
+    @@tour += 1 
     return @@tour
   end
 
