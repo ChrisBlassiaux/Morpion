@@ -32,6 +32,8 @@ if answer == "Oui"
   game = Game.new(name_1, "O", name_2, "X")
   board = Board.new
 
+
+
   while game.game_turn_counter <= 30 #|| quelqu'un gagne
     system "clear"
     game.start_turns
@@ -51,8 +53,7 @@ if answer == "Oui"
       puts "La partie est terminée, c'est un match nul"
       break
     end
-
-    #board.game_won_or_game_bad?
+    
     #game.game_in_progress
   end
 
