@@ -31,3 +31,11 @@
 
 → Le jeu te mènera, chaque étape est expliquée dans le terminal :) 
 
+1/ 2 Joueurs, chaque joueur entre son prénom,
+   Un symbole vous est donc assigné (O/X)
+
+2/ Ciblier la case du plateau que vous voulez remplir grâce aux repaires (A1 par exemple)
+
+3/ Essayer d'aligner 3 de vos symboles ! 
+
+4/ ...
